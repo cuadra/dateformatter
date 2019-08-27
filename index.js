@@ -30,7 +30,7 @@ function isNumberKey(evt) {
         return false;
     return true;
 }
-var handler = function (evt) {
+var Formatter = function (evt) {
     if (shouldFormat(evt)) {
 
         //Save Cursor Position
@@ -50,5 +50,14 @@ var handler = function (evt) {
 
     }
 }
+var SwapToNumber = function (evt) {
+    evt.target.setAttribute("type", "number");
+}
+var SwapToText = function (evt) {
+    evt.target.setAttribute("type", "text");
+}
 
-document.getElementById('dob').addEventListener('keyup', handler);
+document.getElementById('dob').addEventListener('keyup', Formatter);
+
+document.getElementById('dob').addEventListener('touchstart', SwapToNumber);
+document.getElementById('dob').addEventListener('touchend', SwapToText);
