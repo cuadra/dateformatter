@@ -53,7 +53,7 @@ var Formatter = function (evt) {
 var SwapToNumber = function (evt) {
     //evt.target.setAttribute("type", "number");
     //pattern="\d*"
-    //document.getElementById('dob').setAttribute("type", "tel");
+    document.getElementById('dob').setAttribute("type", "tel");
     document.getElementById('dob').setAttribute("inputmode", "numeric");
     document.getElementById('dob').setAttribute("pattern", "[0-9]*");
 }
