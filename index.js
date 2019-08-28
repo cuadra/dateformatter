@@ -62,6 +62,7 @@ var SwapToText = function (evt) {
     evt.target.removeAttribute("inputmode");
 }
 
+document.getElementById('date').addEventListener('keyup', Formatter);
 document.getElementById('dob').addEventListener('keyup', Formatter);
 document.getElementById('dob2').addEventListener('keyup', Formatter);
 
