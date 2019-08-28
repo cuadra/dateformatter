@@ -51,7 +51,7 @@ var Formatter = function (evt) {
     }
 }
 var SwapToNumber = function (evt) {
-    evt.target.setAttribute("type", "number");
+    //evt.target.setAttribute("type", "number");
     evt.target.setAttribute("inputmode", "numeric");
 }
 var SwapToText = function (evt) {
