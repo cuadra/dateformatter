@@ -55,7 +55,7 @@ var SwapToNumber = function (evt) {
     //pattern="\d*"
     document.getElementById('dob').setAttribute("type", "tel");
     document.getElementById('dob').setAttribute("inputmode", "numeric");
-    document.getElementById('dob').setAttribute("pattern", "[0-9]*");
+    //document.getElementById('dob').setAttribute("pattern", "[0-9]*");
 }
 var SwapToText = function (evt) {
     evt.target.setAttribute("type", "text");
