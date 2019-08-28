@@ -52,9 +52,10 @@ var Formatter = function (evt) {
 }
 var SwapToNumber = function (evt) {
     //evt.target.setAttribute("type", "number");
-    // pattern="\d*"
+    //pattern="\d*"
+    //document.getElementById('dob').setAttribute("type", "tel");
     document.getElementById('dob').setAttribute("inputmode", "numeric");
-    //evt.target.setAttribute("pattern", "\/d*");
+    document.getElementById('dob').setAttribute("pattern", "[0-9]*");
 }
 var SwapToText = function (evt) {
     evt.target.setAttribute("type", "text");
