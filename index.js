@@ -54,7 +54,7 @@ var SwapToNumber = function (evt) {
     //evt.target.setAttribute("type", "number");
     // pattern="\d*"
     evt.target.setAttribute("inputmode", "numeric");
-    evt.target.setAttribute("pattern", "\d*");
+    evt.target.setAttribute("pattern", "\/d*");
 }
 var SwapToText = function (evt) {
     evt.target.setAttribute("type", "text");
