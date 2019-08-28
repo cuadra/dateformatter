@@ -52,12 +52,14 @@ var Formatter = function (evt) {
 }
 var SwapToNumber = function (evt) {
     evt.target.setAttribute("type", "number");
+    evt.target.setAttribute("inputmode", "numeric");
 }
 var SwapToText = function (evt) {
     evt.target.setAttribute("type", "text");
+    evt.target.removeAttribute("inputmode");
 }
 
 document.getElementById('dob').addEventListener('keyup', Formatter);
 
 document.getElementById('dob').addEventListener('touchstart', SwapToNumber);
-document.getElementById('dob').addEventListener('touchend', SwapToText);
+//document.getElementById('dob').addEventListener('blur', SwapToText);
