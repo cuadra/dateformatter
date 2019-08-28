@@ -53,8 +53,8 @@ var Formatter = function (evt) {
 var SwapToNumber = function (evt) {
     //evt.target.setAttribute("type", "number");
     // pattern="\d*"
-    evt.target.setAttribute("inputmode", "numeric");
-    evt.target.setAttribute("pattern", "\/d*");
+    document.getElementById('dob').setAttribute("inputmode", "numeric");
+    //evt.target.setAttribute("pattern", "\/d*");
 }
 var SwapToText = function (evt) {
     evt.target.setAttribute("type", "text");
@@ -63,6 +63,6 @@ var SwapToText = function (evt) {
 
 document.getElementById('dob').addEventListener('keyup', Formatter);
 
-document.getElementById('dob').addEventListener('focus', SwapToNumber);
-document.getElementById('dob').addEventListener('touchstart', SwapToNumber);
+//document.getElementById('dob').addEventListener('focus', SwapToNumber);
+window.addEventListener('load', SwapToNumber);
 //document.getElementById('dob').addEventListener('blur', SwapToText);
