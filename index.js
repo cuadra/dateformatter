@@ -63,6 +63,15 @@ var SwapToText = function (evt) {
 }
 
 document.getElementById('dob').addEventListener('keyup', Formatter);
+document.getElementById('dob2').addEventListener('keyup', Formatter);
+
+var copy = document.getElementById('dob').cloneNode(true);
+
+copy.setAttribute("id", "dob3");
+copy.setAttribute("type", "tel");
+copy.setAttribute("placeholder", "MM/DD/YY (Copied)");
+copy.addEventListener('keyup', Formatter);
+document.getElementsByTagName('body')[0].appendChild(copy);
 
 //document.getElementById('dob').addEventListener('focus', SwapToNumber);
 window.addEventListener('load', SwapToNumber);
